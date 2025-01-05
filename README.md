@@ -19,7 +19,7 @@ This project demonstrates a basic implementation of a Linux character device dri
 
 ## Files
 
-- **sabilal_device.c**: The main source file containing the driver implementation.
+- **ldd_device.c**: The main source file containing the driver implementation.
 
 ## How It Works
 
@@ -42,7 +42,7 @@ This project demonstrates a basic implementation of a Linux character device dri
 Compile the driver using `make`. Make sure you have a `Makefile` in the same directory. Example `Makefile`:
 
 ```makefile
-obj-m += sabilal_device.o
+obj-m += ldd_device.o
 
 all:
     make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
